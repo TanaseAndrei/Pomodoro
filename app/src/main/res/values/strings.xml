@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="menu_option_settings">Settings</string>
+    <string name="menu_option_about">About</string>
+    <string name="settings_label">Settings</string>
+    <string name="work_minute_picker_title">Work session duration</string>
+    <string name="small_break_minute_picker_title">Small break duration</string>
+    <string name="long_break_minute_picker_title">Long break duration</string>
+    <string name="timer_preference_category_title">Timer</string>
+    <string name="work_minute_picker_summary">00 minutes</string>
+    <string name="small_break_minute_picker_summary">00 minutes</string>
+    <string name="long_break_minute_picker_summary">00 minutes</string>
+    <string name="sessions_until_long_break_title">Work sessions until longer break</string>
+    <string name="sessions_until_long_break_summary">00 sessions</string>
+    <string name="stop_button_content_description">Stop button.</string>
+    <string name="start_and_pause_button_content_description">Start or pause button.</string>
+    <string name="skip_button_content_description">Skip button.</string>
+    <string name="work_time_text">Work Session</string>
+    <string name="break_time_text">Break</string>
+    <string name="notification_text">" minutes left"</string>
+    <string name="start_notification_action_title">Start</string>
+    <string name="pause_notification_action_title">Pause</string>
+    <string name="skip_notification_action_title">Skip</string>
+    <string name="stop_notification_action_title">Stop</string>
+    <string name="resume_notification_action_title">Resume</string>
+    <string name="long_break_text">Longer break</string>
+    <string name="finished_notification_title">" finished"</string>
+    <string name="finished_notification_text">"Want to start a "</string>
+    <string name="work_time_minutes_default_value">25</string>
+    <string name="small_break_time_minutes_default_value">5</string>
+    <string name="long_break_time_minutes_default_value">15</string>
+    <string name="sessions_until_long_break_default_value">4</string>
+    <string name="number_picker_dialog_positive_button_text">OK</string>
+    <string name="number_picker_dialog_negative_button_text">Cancel</string>
+    <string name="theme_preference_category_title">Theme</string>
+
+    <string name="work_time_minutes_preference_key">work_time_minutes</string>
+    <string name="small_break_time_minutes_preference_key">small_break_time_minutes</string>
+    <string name="long_break_time_minutes_preference_key">long_break_time_minutes</string>
+    <string name="sessions_until_long_break_preference_key">sessions_until_long_break</string>
+
+    <string name="one_session_until_long_break_text">Longer break coming!</string>
+    <string name="sessions_until_long_break_text">" work sessions left until a longer break "</string>
+    <string name="about_label">About</string>
+    <string name="about_app_version_title">App Version</string>
+    <string name="about_app_version_key">version</string>
+    <string name="about_source_code_title">View the source code</string>
+    <string name="about_source_code_key">goToSourceCode</string>
+    <string name="about_source_code_summary">Visit our github</string>
+    <string name="about_send_email_title">Contact us</string>
+    <string name="about_send_email_key">sendEmail</string>
+    <string name="about_send_email_summary">Send email</string>
+    <string name="github_link">https://github.com/TanaseAndrei</string>
+    <string name="feedback_email">mailto:stonixandrei@yahoo.com</string>
+</resources>
