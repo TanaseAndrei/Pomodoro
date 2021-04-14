@@ -40,7 +40,6 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
     private int consecutivePeriods;
     private TextView currentPeriodTextView;
     private TextView periodsUntilBigBreakTextView;
-    private SharedPreferences sharedPreferences;
     private SensorReader sensorReader;
     private HandHoveredState handHoveredState;
 
@@ -61,7 +60,6 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
         startButton.setOnClickListener(this);
         stopButton.setOnClickListener(this);
         skipButton.setOnClickListener(this);
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         this.setTitle("");
     }
 
@@ -239,17 +237,21 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
         Log.d(this.getClass().getSimpleName(), "I'm in setButtonsState() from TimerActivity");
         switch (timerState) {
             case STARTED:
+                Log.d(this.getClass().getSimpleName(), "STARTED");
                 startButton.setImageResource(R.drawable.ic_pause);
                 stopButton.setVisibility(View.VISIBLE);
                 break;
             case STOPPED:
+                Log.d(this.getClass().getSimpleName(), "STOPPED");
                 if (consecutivePeriods < 1) {
                     stopButton.setVisibility(View.INVISIBLE);
                 } else {
                     stopButton.setVisibility(View.VISIBLE);
                 }
+                startButton.setImageResource(R.drawable.ic_play);
                 break;
             case PAUSED:
+                Log.d(this.getClass().getSimpleName(), "PAUSED");
                 startButton.setImageResource(R.drawable.ic_play);
                 break;
         }

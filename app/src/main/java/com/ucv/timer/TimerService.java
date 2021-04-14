@@ -187,7 +187,6 @@ public class TimerService extends Service implements SharedPreferences.OnSharedP
         if (consecutiveWorkPeriods > periodsUntilBreak) consecutiveWorkPeriods = periodsUntilBreak;
     }
 
-
     private void resetTimeCounter() {
         Log.d(this.getClass().getSimpleName(), "I'm in resetTimeCounter() from TimerService");
         timeMillisStarted = System.currentTimeMillis();

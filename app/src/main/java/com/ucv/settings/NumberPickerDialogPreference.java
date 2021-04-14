@@ -1,11 +1,8 @@
 package com.ucv.settings;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.graphics.drawable.ColorDrawable;
 import android.preference.DialogPreference;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
@@ -18,11 +15,11 @@ import com.ucv.R;
 
 public class NumberPickerDialogPreference extends DialogPreference {
 
-    public static String attributeNamespace = "com.ucv.pomodoro";
+    public static String attributeNamespace = "com.ucv";
 
     // allowed range
     private int maxValue;
-    private  int minValue;
+    private int minValue;
 
     private NumberPicker picker;
     private int value;
@@ -32,12 +29,7 @@ public class NumberPickerDialogPreference extends DialogPreference {
         init(attrs);
     }
 
-    public NumberPickerDialogPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init(attrs);
-    }
-
-    private void init(AttributeSet attrs){
+    private void init(AttributeSet attrs) {
         minValue = attrs.getAttributeIntValue(attributeNamespace, "min_value", 0);
         maxValue = attrs.getAttributeIntValue(attributeNamespace, "max_value", 100);
         setPositiveButtonText(R.string.number_picker_dialog_positive_button_text);

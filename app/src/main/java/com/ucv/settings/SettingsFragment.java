@@ -43,7 +43,6 @@ public class SettingsFragment extends PreferenceFragment implements
                 .unregisterOnSharedPreferenceChangeListener(this);
     }
 
-
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
                                           String key) {
         Log.d(this.getClass().getSimpleName(), "Inside onSharedPreferenceChanged() in SettingsFragment");
